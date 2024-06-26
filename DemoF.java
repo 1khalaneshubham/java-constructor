@@ -1,18 +1,14 @@
 public class DemoF {
     public static void main(String[] args) {
-        int N = 15;
-        int count = 0;
+        
+        int arr1[][] = {{},{},{}};
+        int arr2[][] =  new int[2][];
 
-        for(int i = 1; i <= N; i++){
-            if(N % i == 0){
-                // System.out.println("Not");
-                count++;
-            }
-        }
-        if(count == 2){
-            System.out.println("Yes Prime");
-        }else{
-            System.out.println("Not Prime");
-        }
+        System.out.println(arr1.length);
+        System.out.println(arr1[0].length);
+  
+        System.out.println(arr2.length);
+        System.out.println(arr2[0].length);
+
     }
 }

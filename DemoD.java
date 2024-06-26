@@ -1,19 +1,15 @@
 public class DemoD {
+
+    // Jagged Array
     public static void main(String[] args) {
         
-        int N = 12321;
-        int temp = N;
-        int rev = 0;
+        int arr[][] = {{10,20,30},{40,50},{60}};
 
-        while (N != 0) {
-            int digit = N % 10;
-            rev = (rev * 10) + digit;
-            N = N/10;
-        }
-        if(temp == rev){
-            System.out.println("True");
-        }else{
-            System.out.println("False");
+        for(int i = 0; i < arr.length; i++){
+            for(int j = 0; j < arr[i].length; j++){
+                System.out.print(arr[i][j]+" ");
+            }
+            System.out.println();
         }
     }
 }

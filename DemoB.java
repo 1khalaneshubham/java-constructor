@@ -1,17 +1,23 @@
-import java.util.Scanner;
-
 public class DemoB {
     public static void main(String[] args) {
-        Scanner obj = new Scanner(System.in);
-        System.out.print("Enter a NO: ");
-        int N = obj.nextInt();
-        int ans = 0;
+        
+        int arr[][] = new int[2][3];
 
-        while (N != 0) {
-            int digit = N % 10;
-            ans = (ans*10) + digit;
-            N = N/10;
+        arr[0][0] = 10;
+        arr[0][1] = 20;
+        arr[0][2] = 30;
+        arr[1][0] = 40;
+        arr[1][1] = 50;
+        arr[1][2] = 60;
+
+        // System.out.println(arr);
+        // int arr[][] = new int arr[2][3];
+
+        for(int i = 0; i < 2; i++){
+            for(int j = 0; j < 3; j++){
+                System.out.print(arr[i][j]+" ");
+            }
+            System.out.println();
         }
-        System.out.println("OutPut: "+ ans);
-    }    
+    }
 }

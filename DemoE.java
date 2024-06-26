@@ -1,9 +1,25 @@
+import java.util.Scanner;
+
 public class DemoE {
     public static void main(String[] args) {
-        for(int i = 1; i <= 10; i++){
-            int x = 10;
-            System.out.println(x);
-            System.out.println(x+i);
+        
+        int arr[][] = new int[3][];
+
+        arr[0]= new int[3];
+        arr[1]= new int[2];
+        arr[2]= new int[1];
+
+        Scanner sc = new Scanner(System.in);
+        for(int i = 0; i<arr.length; i++){
+            for(int j = 0; j < arr.length; j++){
+                arr[i][j] = sc.nextInt();
+                for(int[] x:arr){
+                    for(int[] y:arr){
+                        System.out.print(arr[i][j]);
+                    }
+                }
+            }
         }
+        System.out.println();
     }
 }
